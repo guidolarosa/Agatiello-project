@@ -93,7 +93,7 @@ main  {
   display: block;
 }
 .parallax-container {
-  background-image: url("/links/general.png");
+  background-image: url("https://s21.postimg.org/fl77k90fb/general.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
