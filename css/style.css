@@ -21,17 +21,19 @@ a {
 
 /*STYLING*/
 
+  /*HEADER y BARRA DE NAVEGACIÓN*/
+
 header {
   display: block;
   background-color: white;
-  height:15vh;
+  height:70px;
   position: fixed;
   width: 100%;
   box-shadow: 0px 5px 200px gray;
 }
 
 .back-header  {
-  height:15vh;
+  height:70px;
 }
 
 .color-header {
@@ -42,13 +44,13 @@ header {
 #logo {
   float: left;
   margin: 0px 0px 0px 40px;
-  height: 70px;
+  height: 40px;
 }
 
 nav {
   float: left;
   display: block;
-  margin: 10px 0px;
+  margin: -5px 0px;
 }
 
 nav ul {
@@ -74,7 +76,7 @@ nav ul li a:hover {
 }
 
 .contact-links  {
-  width: 140px;
+  width: 80px;
   height: 50px;
   margin: 10px 0px 0px 0px;
   float: right;
@@ -82,8 +84,8 @@ nav ul li a:hover {
 
 .mail, .facebook  {
   float: left;
-  width:50px;
-  height: 50px;
+  width:20px;
+  height: 20px;
   margin: 0px 10px;
   background-color: #54c3b0;
   border-radius: 5px;
@@ -98,16 +100,31 @@ nav ul li a:hover {
 main  {
   display: block;
 }
+
+/*Efecto parallax*/
+
 .parallax-container {
   background-image: url("https://s21.postimg.org/fl77k90fb/general.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 70px;
-  height: 85vh;
+  height: 90vh;
   width: 100%;
   box-shadow: inset 0px 0.1px 200px rgba(0, 0, 0, 0.7);
   overflow: hidden;
+}
+
+#pericias-psicologicas {
+  background-image: url("/links/pericias-psicologicas.png");
+}
+
+#evaluacion-personal  {
+  background-image: url("/links/evaluacion-personal.png");
+}
+
+#orientacion-vocacional {
+  background-image: url("/links/orientacion-vocacional.png");
 }
 
 .welcome-message-block  {
@@ -117,7 +134,7 @@ main  {
   width: 70%;
   background-color: rgba(84, 195, 176,0.7);
   display: inline-block;
-  margin: 15% 15%;
+  margin: 12% 15%;
   font-family: 'Varela Round';
   padding: 30px 20px 50px;
 }
@@ -130,41 +147,12 @@ main  {
   font-size: 20px;
 }
 
-.first-section  {
-  width:100%;
-  background-color: white;
-  display: block;
-  height: 340px;
-}
-
-.info-module  {
-  width:33%;
-  float: left;
-  text-align: center;
-  display: inline-block;
-  font-family: sans-serif;
-}
-
-.info-module img  {
-  width:100%;
-}
-
-.info-module  h3  {
-  color: gray;
-}
-
-.info-module  p {
-  font-size: 13px;
-  padding: 0 12%;
-  color:	rgb(85, 140, 195);
-}
-
 .second-section {
   color: white;
   font-family: sans-serif;
   background-color: #54c3b0;
   margin: 0;
-  padding: 30px;
+  padding: 30px 100px;
   font-size: 12px;
 }
 
@@ -173,49 +161,93 @@ main  {
   font-family: sans-serif;
   background-color: #b2b2b2;
   margin: 0;
-  padding: 30px;
-  font-size: 12px
+  padding: 30px 100px;
+  font-size: 20px
 }
 
 .third-section h4 {
-  font-size: 18px;
+  font-size: 23px;
   margin: 0;
+  font-family: 'Varela Round';
+}
+
+/*INFORMATION BLOCKS - Secciones donde van los ejes de acción de la empresa*/
+#block-pericias-psicologicas  {
+  background-color: #54c3b0;
+  color: white;
+}
+#block-pericias-psicologicas h5 {
+  color: white;
+}
+
+#block-pericias-psicologicas .info ol li, .info ul li, p {
+  color: white;
+  font-size: 15px;
+}
+
+#block-evaluacion-personal  {
+  background-color: rgb(231, 95, 83);
+}
+
+#block-evaluacion-personal .info ol li, .info ul li, p {
+  color: white;
+  font-size: 15px;
+}
+
+#block-orientacion-vocacional {
+  background-color: rgb(178, 178, 178);
+}
+.info {
+  width:70%;
+  float: left;
 }
 
 .info-block {
   width: 100%;
   display: inline-block;
-  background-color: white;
-}
-
-.info-block .title-block {
-  height: 30px;
-  background-color: #54c3b0;
   color:white;
   font-family: sans-serif;
-  line-height: 30px;
-}
-
-.title-block h5 {
-  display: block;
-  margin: 0px 0px 0px 50px;
-}
-
-.info p {
-  width: 70%;
-  float: right;
-  padding: 30px;
-  font-family: sans-serif;
-  color: gray;
-  margin: 0;
-  font-size: 12px;
 }
 
 .info-image {
   display: inline-block;
   float:left;
   width:30%;
+  padding: 40px;
 }
+
+.info-text  {
+  width:90%;
+  float: left;
+  column-count: 2;
+  margin: 40px auto;
+}
+
+.info-title {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+}
+
+.info-title h5 {
+  margin: 40px 0px;
+  font-family: 'Varela Round' ,sans-serif;
+  color: black;
+  font-size: 30px;
+}
+
+.info-text p {
+  float: right;
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 15px;
+}
+
+.info ol li, .info ul li {
+  font-size: 15px;
+}
+
+/*Footer - datos de contacto y links*/
 
 #footer {
   width: 100%;
@@ -230,16 +262,14 @@ main  {
 
 #footer .footer-link-row  {
   width:100%;
-  height:100px;
+  display: block;
 }
 
-#footer .footer-link  {
-  width:33.3%;
-  height: 100px;
-  float: left;
-  background-color: white;
+#footer img {
+  width:100%;
+  margin: 0;
+  display: inline-block;
 }
-
 #footer .footer-bottom  {
   background-color: #54c3b0;
   height: 40px;
@@ -254,5 +284,15 @@ main  {
   color: white;
   text-decoration: none;
   font-style: normal;
-  font-family: sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#footer address a {
+  color:rgb(231, 95, 83);
+  font-family: 'Varela Round', sans-serif;
+}
+
+#footer address a:visited {
+  color:rgb(231, 95, 83);
+  font-family: 'Varela Round', sans-serif;
 }
