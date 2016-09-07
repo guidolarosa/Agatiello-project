@@ -30,7 +30,7 @@ header {
   position: fixed;
   width: 100%;
   box-shadow: 0px 5px 200px gray;
-  min-width: 630px;
+  min-width: 590px;
 }
 
 .back-header  {
@@ -46,6 +46,12 @@ header {
   float: left;
   margin: 0px 0px 0px 40px;
   height: 40px;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#logo:hover {
+  opacity: 0.5;
 }
 
 nav {
@@ -91,8 +97,9 @@ nav ul li a:hover {
   margin: 0px 10px;
   background-color: #54c3b0;
   border-radius: 5px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 1;
+  border-bottom: 2px solid rgb(71, 152, 136);
 }
 
 .contact-links img {
@@ -147,7 +154,7 @@ main  {
   margin: 12% 15%;
   font-family: 'Varela Round';
   padding: 30px 20px 50px;
-  border-bottom: 10px solid rgba(120, 150,150,0.7);
+  border-bottom: 10px solid rgba(71, 152, 136,0.7);
 }
 
 .welcome-message-block h2 {
@@ -263,7 +270,6 @@ main  {
 
 #footer {
   width: 100%;
-  height: 200px;
 }
 
 #footer .footer-top {
@@ -275,39 +281,33 @@ main  {
 #footer .footer-link-row  {
   width:100%;
   display: block;
-  height: 120px;
+  height: 110px;
 }
 
 #footer .footer-link {
   float: left;
   width:33.3%;
-  height: 120px;
-  font-size: 50px;
+  height: 110px;
+}
+
+.footer-link i{
+  color: #54c3b0;
+  font-size: 110px;
+  width: 100%;
+  text-align: center;
 }
 
 #footer .telephone  {
-  display:block;
-  height: 100px;
-  line-height: 75px;
-  width: 90vw;
+  width: 100%;
   font-family: 'Varela Round';
 }
 
 #footer .telephone a {
-  color: #54c3b0;
-  text-align: center;
+  color: rgb(231, 95, 83);
 }
-
-  .footer-link i{
-    color: #54c3b0;
-    font-size: 100px;
-    width: 100%;
-    text-align: center;
-  }
 
 #footer .footer-bottom  {
   background-color: white;
-  height: 40px;
   width: 100%;
   text-align: center;
   border-radius: 0px 0px 5px 5px;
@@ -316,6 +316,10 @@ main  {
 /*TABLET QUERY*/
 
 @media only screen and (max-width:992px) and (min-width:451px) {
+
+  nav ul {
+    padding-left: 1vw;
+  }
 
   .footer-link i{
     color: #54c3b0;
@@ -410,7 +414,6 @@ main  {
 
 #footer .footer-bottom  {
   background-color: white;
-  height: 70px;
   width: 100%;
   text-align: center;
   font-size: 16px;
@@ -430,6 +433,8 @@ main  {
   color:rgb(84, 195, 176);
   font-family: 'Varela Round', sans-serif;
 }
+
+/*PHONE QUERY*/
 
 @media only screen and (max-width:450px) {
 
@@ -456,22 +461,23 @@ main  {
   }
 
   header nav {
-    width:80%;
+    width:100%;
   }
 
   header nav ul {
-    width:100%;
     margin: 0px 10% 10px;
+    padding-left: 0px;
   }
 
   header nav ul li {
     margin: 10px 0px;
+    display: block;
   }
 
   nav ul li a {
     color:#666;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 24px;
   }
 
   #logo {
@@ -510,24 +516,24 @@ main  {
 
   .contact-links  {
     width: 50%;
-    margin: 0px 20%;
+    margin: 0px auto;
+    float: none;
   }
 
   .mail, .facebook  {
-    float: left;
     width:30%;
-    height: 40px;
+    margin: 0px 10%;
+    height: 44px;
     background-color: #54c3b0;
     border-radius: 5px;
   }
+
 
   .contact-links img {
     width: 25px;
     height: 25px;
     margin: 8px 8px;
   }
-
-
   .welcome-message-block h2 {
     font-size: 20px;
   }
@@ -669,15 +675,6 @@ main  {
     overflow: hidden;
   }
 
-  #footer .footer-bottom  {
-    height: 100px;
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    line-height: 32px;
-    border-radius: 0px 0px 5px 5px;
-  }
-
   #main-parallax {
     background-attachment: scroll;
     background-position: top;
@@ -689,6 +686,25 @@ main  {
     line-height: 120px;
     width: 100%;
     text-align: center;
+  }
+
+  #footer .telephone  {
+    height: 100px;
+    width: 100vw;
+    font-family: 'Varela Round';
+
+  }
+
+  #footer .telephone  {
+    display:block;
+    width: 90vw;
+    font-family: 'Varela Round';
+    padding: 20px 0px 0px 0;
+
+  }
+
+  #footer .telephone a {
+    color: #54c3b0;
   }
 
 }

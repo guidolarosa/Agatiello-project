@@ -10,6 +10,17 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
 
+    <script type="text/javascript">
+
+      function scrollNosotros() {
+        window.scrollTo(0, 500);
+      }
+
+      function scrollNuestrosServicios() {
+        window.scrollTo(0, 1820);
+      }
+    </script>
+
   </head>
   <body>
 
@@ -20,8 +31,9 @@
       <img src="http://www.agatiello-ab.com.ar/Psicotest/2017-Psicotestweb/imagen/2017 PSI web_logo.png" alt="logo" id="logo" />
       <nav id="menu-bar">
         <ul>
-          <li><a href="#nosotros">NOSOTROS</a></li>
-          <li><a href="#block-pericias-psicologicas">NUESTROS SERVICIOS</a></li>
+          <li><a onclick="scrollNosotros()" href="#nosotros">NOSOTROS</a></li>
+
+          <li><a onclick="scrollNuestrosServicios()" href="#block-pericias-psicologicas">NUESTROS SERVICIOS</a></li>
         </ul>
       </nav>
       <div class="contact-links">
@@ -158,7 +170,7 @@
       <div class="footer-top"></div>
 
       <div class="footer-link-row">
-        <a href="#">
+        <a href="https://www.facebook.com/ConsultoraPsicotest">
           <div class="footer-link" id="facebook">
             <i class="fa fa-facebook-square" aria-hidden="true"></i>
           </div>
@@ -170,16 +182,30 @@
           </div>
         </a>
 
-        <a href="#">
+        <a href="mailto:contacto@psicotest.com.ar?subjcect=Contacto">
           <div class="footer-link" id="mail">
-            <i class="fa fa-envelope" aria-hidden="true"></i></div>       <div class="footer-link" id="mail"></div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
           </div>
+        </a>
+      </div>
 
       <div class="footer-bottom">
+
         <div class="telephone contact">
-          (011) 15-5597-8367 / 15-6728-9714 - <a href="contacto@psicotest.com.ar">contacto@psicotest.com.ar</a>
+
+        (011) 15-5597-8367 / 15-6728-9714 -
+
+          <a href="mailto:contacto@psicotest.com.ar?subjcect=Contacto">
+
+           contacto@psicotest.com.ar
+
+          </a>
+
         </div>
+
       </div>
+
     </footer>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   </body>
 </html>
