@@ -226,6 +226,7 @@ main  {
   display: inline-block;
   color:white;
   font-family: sans-serif;
+  padding-bottom: 30px;
 }
 
 .info-image {
@@ -295,6 +296,12 @@ main  {
   font-size: 110px;
   width: 100%;
   text-align: center;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.footer-link i:hover {
+  opacity:0.7;
 }
 
 #footer .telephone  {
@@ -495,7 +502,7 @@ main  {
     display: inline-block;
     margin: 12% 10%;
     font-family: 'Varela Round';
-    padding: 30px 20px 50px;
+    padding: 30px 20px 20px;
   }
 
   .parallax-container {
@@ -704,7 +711,7 @@ main  {
   }
 
   #footer .telephone a {
-    color: #54c3b0;
+    color: rgb(231, 95, 83);
   }
 
 }
