@@ -30,6 +30,7 @@ header {
   position: fixed;
   width: 100%;
   box-shadow: 0px 5px 200px gray;
+  min-width: 630px;
 }
 
 .back-header  {
@@ -76,21 +77,28 @@ nav ul li a:hover {
 }
 
 .contact-links  {
-  width: 80px;
+  width: 100px;
   height: 50px;
-  margin: 10px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
   float: right;
+  overflow: hidden;
 }
 
 .mail, .facebook  {
   float: left;
-  width:20px;
-  height: 20px;
+  width:30px;
+  height: 30px;
   margin: 0px 10px;
   background-color: #54c3b0;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
   opacity: 1;
+}
+
+.contact-links img {
+  width: 15px;
+  height: 15px;
+  margin: 7.5px 7.5px;
 }
 
 .mail:hover, .facebook:hover  {
@@ -101,7 +109,7 @@ main  {
   display: block;
 }
 
-/*Efecto parallax*/
+  /*Efecto parallax*/
 
 .parallax-container {
   background-image: url("https://s21.postimg.org/fl77k90fb/general.png");
@@ -117,6 +125,8 @@ main  {
 
 #pericias-psicologicas {
   background-image: url("https://s15.postimg.org/jurd4r357/pericias_psicologicas.png");
+  background-color: white;
+
 }
 
 #evaluacion-personal  {
@@ -137,6 +147,7 @@ main  {
   margin: 12% 15%;
   font-family: 'Varela Round';
   padding: 30px 20px 50px;
+  border-bottom: 10px solid rgba(120, 150,150,0.7);
 }
 
 .welcome-message-block h2 {
@@ -172,6 +183,7 @@ main  {
 }
 
 /*INFORMATION BLOCKS - Secciones donde van los ejes de acción de la empresa*/
+
 #block-pericias-psicologicas  {
   background-color: #54c3b0;
   color: white;
@@ -263,36 +275,420 @@ main  {
 #footer .footer-link-row  {
   width:100%;
   display: block;
+  height: 120px;
 }
 
-#footer img {
-  width:100%;
-  margin: 0;
-  display: inline-block;
+#footer .footer-link {
+  float: left;
+  width:33.3%;
+  height: 120px;
+  font-size: 50px;
 }
+
+#footer .telephone  {
+  display:block;
+  height: 100px;
+  line-height: 75px;
+  width: 90vw;
+  font-family: 'Varela Round';
+}
+
+#footer .telephone a {
+  color: #54c3b0;
+  text-align: center;
+}
+
+  .footer-link i{
+    color: #54c3b0;
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+  }
+
 #footer .footer-bottom  {
-  background-color: #54c3b0;
+  background-color: white;
   height: 40px;
+  width: 100%;
+  text-align: center;
+  border-radius: 0px 0px 5px 5px;
+}
+
+/*TABLET QUERY*/
+
+@media only screen and (max-width:992px) and (min-width:451px) {
+
+  .footer-link i{
+    color: #54c3b0;
+    font-size: 70px;
+    line-height: 120px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .second-section,.third-section {
+    text-align: center;
+  }
+
+  .welcome-message-block  {
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    background-color: rgba(84, 195, 176,0.7);
+    display: inline-block;
+    margin: 12% 10%;
+    font-family: 'Varela Round';
+    padding: 30px 20px 50px;
+  }
+
+  .info-text  {
+    width:70%;;
+    column-count: 1;
+    text-align: center;
+  }
+
+  .info {
+    width:100%;
+  }
+
+  .info-block {
+    width: 100%;
+    display: inline-block;
+    color:white;
+    font-family: sans-serif;
+  }
+
+  .info-image {
+    float:left;
+    width:40%;
+    margin: 0px 30%;
+    display: block;
+    padding: 20px
+  }
+
+  .info-text  {
+    width:100%;
+    margin: 20px auto 0px;
+    column-count: 1;
+    text-align: center;
+
+  }
+
+  .info-title {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+  }
+
+  .info-title h5 {
+    margin: 20px 0px;
+    font-family: 'Varela Round' ,sans-serif;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .info-text p {
+    float: right;
+    font-family: sans-serif;
+    margin: 0px 30px;
+    font-size: 15px;
+  }
+
+  .info ol li, .info ul li {
+    font-size: 15px;
+    text-align: left;
+    padding:  0% 10%;
+    display: none;
+  }
+
+  #footer .footer-bottom {
+    height: 60px;
+    text-align: center;
+  }
+}
+
+#footer .footer-bottom  {
+  background-color: white;
+  height: 70px;
   width: 100%;
   text-align: center;
   font-size: 16px;
   line-height: 32px;
   border-radius: 0px 0px 5px 5px;
+  color: rgb(84, 195, 176);
 }
 
 #footer address {
-  color: white;
+  color: rgb(84, 195, 176);
   text-decoration: none;
   font-style: normal;
   font-family: 'Varela Round', sans-serif;
 }
 
 #footer address a {
-  color:rgb(231, 95, 83);
+  color:rgb(84, 195, 176);
   font-family: 'Varela Round', sans-serif;
 }
 
-#footer address a:visited {
-  color:rgb(231, 95, 83);
-  font-family: 'Varela Round', sans-serif;
+@media only screen and (max-width:450px) {
+
+  body,html  {
+    width:100%;
+    overflow-x: hidden;
+  }
+
+  header  {
+    height:240px;
+    text-align: center;
+    position: static;
+    margin: 0px;
+    min-width: 0px;
+  }
+
+  .color-header {
+    background-color: rgb(84, 195, 176);
+    height: 10px;
+  }
+
+  .back-header  {
+    display: none;
+  }
+
+  header nav {
+    width:80%;
+  }
+
+  header nav ul {
+    width:100%;
+    margin: 0px 10% 10px;
+  }
+
+  header nav ul li {
+    margin: 10px 0px;
+  }
+
+  nav ul li a {
+    color:#666;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+
+  #logo {
+    width:70%;
+    height: auto;
+    margin:0px 15%;
+  }
+
+  .welcome-message-block  {
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    background-color: rgba(84, 195, 176,0.7);
+    display: inline-block;
+    margin: 12% 10%;
+    font-family: 'Varela Round';
+    padding: 30px 20px 50px;
+  }
+
+  .parallax-container {
+    background-image: url("https://s21.postimg.org/fl77k90fb/general.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 180px;
+    height: 73vh;
+    width: 100%;
+    box-shadow: inset 0px 0.1px 200px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+  }
+
+  .second-section,.third-section {
+    text-align: center;
+  }
+
+  .contact-links  {
+    width: 50%;
+    margin: 0px 20%;
+  }
+
+  .mail, .facebook  {
+    float: left;
+    width:30%;
+    height: 40px;
+    background-color: #54c3b0;
+    border-radius: 5px;
+  }
+
+  .contact-links img {
+    width: 25px;
+    height: 25px;
+    margin: 8px 8px;
+  }
+
+
+  .welcome-message-block h2 {
+    font-size: 20px;
+  }
+
+  .welcome-message-block p {
+    font-size: 13px;
+  }
+
+  .second-section {
+    color: white;
+    font-family: sans-serif;
+    background-color: #54c3b0;
+    margin: 0;
+    padding: 30px 20px;
+    font-size: 12px;
+  }
+
+  .third-section  {
+    color: white;
+    font-family: sans-serif;
+    background-color: #b2b2b2;
+    margin: 0;
+    padding: 30px 20px;
+    font-size: 20px
+  }
+
+  .third-section h4 {
+    font-size: 23px;
+    margin: 0;
+    font-family: 'Varela Round';
+  }
+
+  #pericias-psicologicas {
+    background-image: url("https://s15.postimg.org/jurd4r357/pericias_psicologicas.png");
+    background-color: white;
+    background-position: 50%;
+
+  }
+
+  #evaluacion-personal  {
+    background-image: url("https://s15.postimg.org/v8dwfydnv/evaluacion_personal.png");
+    background-position: 50%;
+  }
+
+  #orientacion-vocacional {
+    background-image: url("https://s15.postimg.org/ycjyz052j/orientacion_vocacional.png");
+    background-position: 50%;
+  }
+
+  #block-pericias-psicologicas  {
+    background-color: #54c3b0;
+    color: white;
+  }
+  #block-pericias-psicologicas h5 {
+    color: white;
+  }
+
+  #block-pericias-psicologicas .info ol li, .info ul li, p {
+    color: white;
+    font-size: 15px;
+  }
+
+  #block-evaluacion-personal  {
+    background-color: rgb(231, 95, 83);
+  }
+
+  #block-evaluacion-personal .info ol li, .info ul li, p {
+    color: white;
+    font-size: 15px;
+  }
+
+  #block-orientacion-vocacional {
+    background-color: rgb(178, 178, 178);
+  }
+
+  .info {
+    width:100%;
+  }
+
+  .info-block {
+    width: 100%;
+    display: inline-block;
+    color:white;
+    font-family: sans-serif;
+  }
+
+  .info-image {
+    float:left;
+    width:100%;
+    display: block;
+  }
+
+  .info-text  {
+    width:100%;
+    margin: 20px auto 0px;
+    column-count: 1;
+    text-align: center;
+
+  }
+
+  .info-title {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+  }
+
+  .info-title h5 {
+    margin: 20px 0px;
+    font-family: 'Varela Round' ,sans-serif;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .info-text p {
+    float: right;
+    font-family: sans-serif;
+    margin: 0px 30px;
+    font-size: 15px;
+  }
+
+  .info ol li, .info ul li {
+    font-size: 15px;
+    text-align: left;
+    padding:  0% 10%;
+    display: none;
+
+  }
+
+  #footer-parallax {
+    background-image: url("https://s21.postimg.org/fl77k90fb/general.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    height: 90vh;
+    width: 100%;
+    box-shadow: inset 0px 0.1px 200px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+  }
+
+  #footer .footer-bottom  {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  #main-parallax {
+    background-attachment: scroll;
+    background-position: top;
+  }
+
+  .footer-link i{
+    color: #54c3b0;
+    font-size: 50px;
+    line-height: 120px;
+    width: 100%;
+    text-align: center;
+  }
+
 }

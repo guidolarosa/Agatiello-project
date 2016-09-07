@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
 
   </head>
   <body>
@@ -19,13 +20,17 @@
       <img src="http://www.agatiello-ab.com.ar/Psicotest/2017-Psicotestweb/imagen/2017 PSI web_logo.png" alt="logo" id="logo" />
       <nav id="menu-bar">
         <ul>
-          <li><a href="#">NOSOTROS</a></li>
-          <li><a href="#">NUESTROS SERVICIOS</a></li>
+          <li><a href="#nosotros">NOSOTROS</a></li>
+          <li><a href="#block-pericias-psicologicas">NUESTROS SERVICIOS</a></li>
         </ul>
       </nav>
       <div class="contact-links">
-        <div class="mail"></div>
-        <div class="facebook"></div>
+        <a href="mailto:contacto@psicotest.com.ar?subjcect=Contacto">
+          <div class="mail" title="Contacto por mail" ><img src="/links/email-nav-link.png" alt="email" /></div>
+        </a>
+        <a href="https://www.facebook.com/ConsultoraPsicotest/?fref=ts">
+          <div class="facebook" title="Facebook" ><img src="/links/facebook-nav-link.png" alt="email" /></div>
+        </a>
       </div>
 
     </header>
@@ -49,7 +54,7 @@
 
 <!-- Primer row con modulos -->
 
-        <div class="second-section">
+        <div class="second-section" id="nosotros">
           <p>
             En <strong style="font-family:'Varela Round'">PSICOTEST</strong> nos dedicamos a realizar Evaluaciones Psicológicas brindando un conocimiento profundo y exhaustivo acerca de las aptitudes intelectuales, afectivas, sociales y laborales de un individuo.<br><br>
 
@@ -113,7 +118,7 @@
             </div>
             <div class="info-text">
               <p>
-                A través de una Evaluación Psicológica es posible saber si una persona es sociable, retraída, emocional, fóbica, autosuficiente, sumisa, entre muchos otros rasgos de la personalidad. <br><br> En un mundo global e interconectado, el éxito de cualquier compañía depende de su capacidad para escoger adecuadamente a su gente.<br><br> El capital humano se transformó en una variable clave: las personas determinan la diferencia y el talento es un atributo individual aportado por individuos concretos; esto nos conduce a un replanteo estratégico al momento de elegir. <br><br> El objetivo de Psicotest es fortalecer los recursos humanos de su empresa, a partir de la identificación de “talento” junto a una correcta lectura de la singularidad psíquica de cada postulante. <br> <br>Tenemos un claro objetivo: Facilitarle la toma de decisiones a través de una lectura diagnóstica y pronóstica de los posibles candidatos.
+                A través de una Evaluación Psicológica es posible saber si una persona es sociable, retraída, emocional, fóbica, autosuficiente, sumisa, entre muchos otros rasgos de la personalidad. <br><br> En un mundo global e interconectado, el éxito de cualquier compañía depende de su capacidad para escoger adecuadamente a su gente.<br><br> El capital humano se transformó en una variable clave: las personas determinan la diferencia y el talento es un atributo individual aportado por individuos concretos; esto nos conduce a un replanteo estratégico al momento de elegir. <br><br> El objetivo de Psicotest es fortalecer los recursos humanos de su empresa, a partir de la identificación de “talento” junto a una correcta lectura de la singularidad psíquica de cada postulante. <br> <br>Tenemos un claro objetivo: Facilitarle la toma de decisiones a través de una lectura diagnóstica y pronóstica de los posibles candidatos.<br><br><br>
 
                 <ul>
                   <li>Asegúrese los mejores resultados.</li><br>
@@ -137,14 +142,14 @@
               </div>
           <div class="info-text">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              La Evaluación Psicológica enfocada a Orientación Vocacional está destinada a jóvenes que aún no han decidido su futuro vocacional u ocupacional. <br><br>A través de diferentes entrevistas, donde se incluyen pruebas psicométricas y proyectivas, se busca esclarecer la problemática vocacional de cada consultante, teniendo en cuenta los intereses y las aptitudes individuales. <br><br> La transición al “mundo adulto” genera gran ansiedad e incertidumbre.<br><br> A la incorporación de nuevos roles junto al duelo por todo lo que queda atrás, se le suma el temor a enfrentarse con lo desconocido, en el contexto de una realidad cambiante que impone desafíos cotidianos.<br> Ante tal problemática, la Evalución Psicológica, a través del conocimiento y la evaluación de las cualidades, capacidades e intereses, posibilita establecer metas, planificar estrategias y tomar decisiones.<br><br>  Entendiendo que cada consultante presenta necesidades y características particulares, el proceso de orientación se elabora de acuerdo a un plan de evaluación diseñado a medida. <br><br>El trabajo es individual y confidencial.<br><br> En caso de menores de edad se trabajará con el joven y con sus padres.<br><br><br>
             </p>
           </div>
         </div>
       </div>
 
 
-      <div class="parallax-container">
+      <div class="parallax-container" id="footer-parallax">
       </div>
 
     </main>
@@ -153,16 +158,27 @@
       <div class="footer-top"></div>
 
       <div class="footer-link-row">
-        <img src="http://www.agatiello-ab.com.ar/Psicotest/1976-PsicotestMailing3/imagen/Redes.png" alt="" />
-        <div class="footer-link" id="facebook"></div>
-        <div class="footer-link" id="web"></div>
-        <div class="footer-link" id="mail"></div>
-      </div>
+        <a href="#">
+          <div class="footer-link" id="facebook">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="footer-link" id="web">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="footer-link" id="mail">
+            <i class="fa fa-envelope" aria-hidden="true"></i></div>       <div class="footer-link" id="mail"></div>
+          </div>
 
       <div class="footer-bottom">
-        <address class="contact">
+        <div class="telephone contact">
           (011) 15-5597-8367 / 15-6728-9714 - <a href="contacto@psicotest.com.ar">contacto@psicotest.com.ar</a>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
