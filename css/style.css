@@ -296,11 +296,12 @@ main  {
 
 .footer-link i{
   color: #54c3b0;
-  font-size: 110px;
+  font-size: 80px;
   width: 100%;
   text-align: center;
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
+  line-height: 110px;
 }
 
 .footer-link i:hover {
