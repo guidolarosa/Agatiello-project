@@ -360,6 +360,7 @@ main  {
     width:70%;;
     column-count: 1;
     text-align: center;
+    padding: 0px 40px;
   }
 
   .info {
@@ -414,7 +415,6 @@ main  {
     font-size: 15px;
     text-align: left;
     padding:  0% 10%;
-    display: none;
   }
 
   #footer .footer-bottom {
@@ -644,6 +644,7 @@ main  {
     margin: 20px auto 0px;
     column-count: 1;
     text-align: center;
+    padding: 0px 10px;
 
   }
 
@@ -672,7 +673,6 @@ main  {
     font-size: 15px;
     text-align: left;
     padding:  0% 10%;
-    display: none;
 
   }
 
