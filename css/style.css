@@ -30,7 +30,7 @@ header {
   position: fixed;
   width: 100%;
   box-shadow: 0px 5px 200px gray;
-  min-width: 590px;
+  min-width: 1085px;
 }
 
 .back-header  {
@@ -83,26 +83,22 @@ nav ul li a:hover {
 }
 
 .contact-links  {
-  width: 100px;
+  min-width: 120px;
+  width: 120px;
   height: 50px;
-  margin: 5px 0px 0px 0px;
+  margin: 2px 0px 0px 0px;
   float: right;
+  font-size: 25px;
   overflow: hidden;
 }
 
 .mail, .facebook  {
   float: left;
-  width:30px;
-  height: 30px;
   margin: 0px 10px;
-  background-color: #54c3b0;
-  border-radius: 5px;
-  color: white;
-  font-size: 17px;
+  color: #54c3b0;
   padding: 5px 7px;
   transition: all 0.2s ease-in-out;
   opacity: 1;
-  border-bottom: 2px solid rgb(71, 152, 136);
 }
 
 .contact-links img {
@@ -158,6 +154,17 @@ main  {
   font-family: 'Varela Round';
   padding: 30px 20px 50px;
   border-bottom: 10px solid rgba(71, 152, 136,0.7);
+}
+
+#parallax-block-ep {
+  background-color:rgba(231, 95, 83,0.5);
+  border-bottom: 10px solid rgba(202, 42, 28,0.5);
+}
+
+#parallax-block-ov {
+  background-color: rgba(178, 178, 178,0.5);
+  border-bottom: 10px solid rgba(60, 60, 60,0.5);
+
 }
 
 .welcome-message-block h2 {
@@ -219,10 +226,6 @@ main  {
 #block-orientacion-vocacional {
   background-color: rgb(178, 178, 178);
 }
-.info {
-  width:70%;
-  float: left;
-}
 
 .info-block {
   width: 100%;
@@ -230,6 +233,11 @@ main  {
   color:white;
   font-family: sans-serif;
   padding-bottom: 30px;
+}
+
+.info {
+  width:70%;
+  float: left;
 }
 
 .info-image {
@@ -240,9 +248,10 @@ main  {
 }
 
 .info-text  {
-  width:90%;
+  width:80%;
   float: left;
   column-count: 2;
+  column-gap: 60px;
   margin: 40px auto;
 }
 
@@ -256,7 +265,11 @@ main  {
   margin: 40px 0px;
   font-family: 'Varela Round' ,sans-serif;
   color: black;
-  font-size: 30px;
+  font-size: 20px;
+}
+
+.info ul, .info ol {
+  padding: 0px;
 }
 
 .info-text p {
@@ -296,7 +309,7 @@ main  {
 
 .footer-link i{
   color: #54c3b0;
-  font-size: 80px;
+  font-size: 60px;
   width: 100%;
   text-align: center;
   opacity: 1;
@@ -322,6 +335,7 @@ main  {
   width: 100%;
   text-align: center;
   border-radius: 0px 0px 5px 5px;
+  display: none;
 }
 
 /*TABLET QUERY*/
@@ -455,7 +469,7 @@ main  {
   }
 
   header  {
-    height:240px;
+    height:350px;
     text-align: center;
     position: static;
     margin: 0px;
@@ -481,14 +495,14 @@ main  {
   }
 
   header nav ul li {
-    margin: 10px 0px;
+    margin: 20px 0px;
     display: block;
   }
 
   nav ul li a {
     color:#666;
     font-family: sans-serif;
-    font-size: 24px;
+    font-size: 18px;
   }
 
   #logo {
@@ -504,7 +518,7 @@ main  {
     width: 80%;
     background-color: rgba(84, 195, 176,0.7);
     display: inline-block;
-    margin: 12% 10%;
+    margin: 50% 10%;
     font-family: 'Varela Round';
     padding: 30px 20px 20px;
   }
@@ -515,7 +529,7 @@ main  {
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 180px;
-    height: 73vh;
+    height: 80vh;
     width: 100%;
     box-shadow: inset 0px 0.1px 200px rgba(0, 0, 0, 0.7);
     overflow: hidden;
@@ -527,26 +541,20 @@ main  {
 
   .contact-links  {
     width: 50%;
+    line-height: 50px;
     margin: 0px auto;
     float: none;
+    font-size: 45px;
   }
 
   .mail, .facebook  {
     width:30%;
     margin: 0px 10%;
-    height: 44px;
-    background-color: #54c3b0;
+    height: 50px;
     border-radius: 5px;
-    font-size: 25px;
     padding-top: 7px;
   }
 
-
-  .contact-links img {
-    width: 25px;
-    height: 25px;
-    margin: 8px 8px;
-  }
   .welcome-message-block h2 {
     font-size: 20px;
   }
@@ -658,7 +666,7 @@ main  {
     margin: 20px 0px;
     font-family: 'Varela Round' ,sans-serif;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -667,6 +675,10 @@ main  {
     font-family: sans-serif;
     margin: 0px 30px;
     font-size: 15px;
+  }
+
+  .info ol, .info ul {
+    padding: 0px;
   }
 
   .info ol li, .info ul li {
